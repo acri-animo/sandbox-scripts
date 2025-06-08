@@ -1,0 +1,5 @@
+CREATE TABLE `pos_system` (
+  `job` VARCHAR(50) NOT NULL,
+  `pos_items` LONGTEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL CHECK (JSON_VALID(`pos_items`)),
+  PRIMARY KEY (`job`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;

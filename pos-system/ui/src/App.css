@@ -1,0 +1,564 @@
+.root-container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  margin: 0 auto;
+  border-radius: 1rem;
+  padding: 1vh 3vw 1vh 1vw;
+  background-color: rgba(15, 15, 15, 0.815);
+  border: 2px solid #8685ef;
+  overflow: hidden;
+}
+
+.employee-view {
+  width: 70vw;
+}
+
+.customer-view {
+  max-width: 15vw;
+  height: 20vh;
+  padding-bottom: 10vh;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  padding: 0vh 1vw 1vh 1vw;
+}
+
+.pos-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vh 0;
+  margin-bottom: 1vh;
+  font-family: "Oswald";
+  color: #8685ef;
+}
+
+.pos-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.user-info {
+  display: flex;
+  justify-content: flex-end;
+  line-height: 3vh;
+  gap: 0.5vw;
+  color: #8685ef;
+}
+
+.user-info span {
+  white-space: nowrap;
+}
+
+.user-info span {
+  white-space: nowrap;
+}
+
+.pos-tabs {
+  display: flex;
+  width: 11vw;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.pos-tabsingle {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #bdbbbb;
+  font-family: "Oswald";
+  border: none;
+}
+
+.pos-tabsingle:hover {
+  background-color: #e0e0e0;
+}
+.pos-tabsingle:focus {
+  background-color: #8685ef;
+  color: white;
+}
+
+.pos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1vh;
+  width: 100%;
+  height: 100%;
+}
+
+.pos-gridspan {
+  grid-column: span 2;
+  width: 100%;
+  height: 100%;
+}
+
+.pos-gridcols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1vh;
+  width: 100%;
+  max-height: 52vh;
+  overflow-y: auto;
+}
+
+.pos-gridcols::-webkit-scrollbar {
+  width: 8px;
+}
+
+.pos-gridcols::-webkit-scrollbar-track {
+  background: "transparent";
+}
+
+.pos-gridcols::-webkit-scrollbar-thumb {
+  background: "transparent";
+  border-radius: 4px;
+}
+
+.col-span-1 {
+  grid-column: span 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* POS ITEMS */
+.item-container {
+  background-color: rgba(28, 28, 28, 0.603);
+  padding: 1rem;
+  border: 1px solid #bbbbbb;
+  border-radius: 0.5rem;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.705);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.item-image {
+  width: 5vw;
+  height: 10vh;
+  background-size: cover;
+  margin-bottom: 0.5rem;
+}
+
+.item-label {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-family: "Oswald";
+}
+
+.item-price {
+  font-size: 1.1rem;
+  font-family: "Oswald";
+  color: #bdbbbb;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.item-button {
+  background-color: #4caf4fcc;
+  color: white;
+  border: 1px solid #bbbbbb;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Oswald";
+}
+
+.item-button:hover {
+  background-color: #45a049;
+}
+
+.item-addicon {
+  margin-right: 0.5rem;
+}
+
+/* POS CART */
+.cart-container {
+  padding: 0 1rem;
+  background-color: rgba(28, 28, 28, 0.603);
+  border: 1px solid #bbbbbb;
+  border-radius: 0.5rem;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.705);
+  display: flex;
+  flex-direction: column;
+  height: 52vh;
+  color: white;
+  overflow: hidden;
+}
+
+.cart-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 1rem;
+  font-family: "Oswald";
+}
+
+.cart-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+.cart-items {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.cart-items::-webkit-scrollbar {
+  width: 8px;
+}
+
+.cart-items::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.cart-items::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.cart-items::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.cart-footer {
+  padding-top: 1rem;
+  border-top: 1px solid #ccc; /* Optional: visual separation */
+}
+
+.cart-itemcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  text-align: left;
+  padding: 0.5rem 0;
+  max-height: 5vh;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0.5rem;
+  gap: 2vw;
+}
+
+.cart-itemimage {
+  width: 2.5vw;
+  height: 5vh;
+  background-size: cover;
+}
+
+.cart-itemlabel {
+  font-family: "Oswald";
+  margin-left: -1vw;
+  font-size: 13px;
+}
+
+.cart-notreadonly {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cart-quantitybuttons {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: rgba(28, 28, 28, 0.603);
+  color: white;
+  border: 1px solid #bbbbbb;
+}
+
+.cart-quantitybuttons:hover {
+  background-color: rgba(54, 54, 54, 0.767);
+}
+
+.cart-quantityremove {
+  background-color: #f44336b2;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid #bbbbbb;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.cart-quantityremove:hover {
+  background-color: #e24f4fd5;
+}
+
+.cart-pricedetails {
+  font-family: "Oswald";
+}
+
+.cart-totalprice {
+  margin-top: 1vh;
+  color: #45a049;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Oswald";
+}
+
+.cart-discountinput {
+  width: 20%;
+  padding: 0.5rem;
+  background-color: rgba(28, 28, 28, 0.603);
+  color: white;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: "Oswald";
+  margin-bottom: 1vh;
+  margin-left: 0.5vw;
+}
+
+/* CHECKOUT BUTTONS */
+.pos-checkoutbuttonroot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1vh;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pos-checkoutbutton1 {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Oswald";
+}
+
+.pos-checkoutbutton1:hover {
+  background-color: #45a049;
+}
+
+.pos-checkoutbutton2 {
+  background-color: #d3a117;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Oswald";
+}
+.pos-checkoutbutton2:hover {
+  background-color: #dfb43d;
+}
+
+.pos-clearcheckoutbutton {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Oswald";
+}
+.pos-clearcheckoutbutton:hover {
+  background-color: #d32f2f;
+}
+
+.pos-checkoutbuttondisabled {
+  background-color: #ccc;
+  color: #666;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: none;
+  pointer-events: none;
+  font-size: 1rem;
+  font-family: "Oswald";
+}
+.pos-checkoutbuttondisabled:hover {
+  background-color: #ccc;
+  color: #666;
+}
+
+/* CUSTOMER POV */
+
+.customer-view {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: 60vh;
+}
+
+.customer-orderheader {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 1rem;
+  font-family: "Oswald";
+}
+
+.customer-checkoutbutton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Oswald";
+}
+.customer-checkoutbutton:hover {
+  background-color: #45a049;
+}
+.customer-checkoutbuttondisabled {
+  background-color: #ccc;
+  color: #666;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: none;
+  pointer-events: none;
+  font-size: 1rem;
+  font-family: "Oswald";
+}
+
+.customer-waiting {
+  display: flex;
+  height: 100%;
+  font-size: 1.5rem;
+  font-family: "Oswald";
+  color: #8685ef;
+}
+
+.checkout-popup-root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.checkout-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #b4b4b4ec;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 15vw;
+  gap: 1rem;
+}
+
+.checkout-popup-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: "Oswald";
+}
+
+.checkout-cash-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Oswald";
+}
+
+.checkout-cash-button:hover {
+  background-color: #45a049;
+}
+
+.checkout-bank-button {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Oswald";
+}
+.checkout-bank-button:hover {
+  background-color: #1976d2;
+}
+
+.checkout-payment-cancelbtn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Oswald";
+}
+.checkout-payment-cancelbtn:hover {
+  background-color: #d32f2f;
+}
+
+.order-details {
+  height: 30vh;
+}
+
+.order-list {
+  margin-bottom: 2vh;
+}
+
+.order-list-header {
+  color: white;
+  font-size: 2vh;
+  margin-bottom: 1vh;
+}
+
+.order-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vw;
+}
+
+.order-list-item {
+  background-color: #2a2a2a;
+  color: white;
+  padding: 1vh 2vw;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.order-list-item:hover {
+  background-color: #3a3a3a;
+}
+
+.order-list-item.selected {
+  background-color: #8685ef;
+}
