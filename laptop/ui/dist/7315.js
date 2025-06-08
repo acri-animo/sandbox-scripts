@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklumen_laptop=self.webpackChunklumen_laptop||[]).push([[7315],{37315:(e,l,a)=>{a.r(l),a.d(l,{propertyCategories:()=>u});var u=[{value:"all",label:"All"},{value:"house",label:"House"},{value:"office",label:"Office"},{value:"warehouse",label:"Warehouse"}]}}]);

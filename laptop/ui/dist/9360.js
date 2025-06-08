@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklumen_laptop=self.webpackChunklumen_laptop||[]).push([[9360],{79360:(l,a,e)=>{e.r(a),e.d(a,{gameCatagories:()=>k});var k=[{value:"all",label:"All"},{value:"blackjack",label:"Blackjack"}]}}]);

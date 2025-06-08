@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklumen_laptop=self.webpackChunklumen_laptop||[]).push([[7740],{77740:(e,t,n)=>{n.d(t,{A:()=>l,b:()=>i});var s=n(67077),u=n(13073);function i(e){return(0,u.Ay)("MuiListItemText",e)}const l=(0,s.A)("MuiListItemText",["root","multiline","dense","inset","primary","secondary"])}}]);

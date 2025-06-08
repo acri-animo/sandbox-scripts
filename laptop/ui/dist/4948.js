@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklumen_laptop=self.webpackChunklumen_laptop||[]).push([[4948],{4948:(e,t,a)=>{a.r(t),a.d(t,{default:()=>u});var n=a(2759),r=a(9910),l=a(51112);const u=function(e){var t=e.task;return n.createElement(r.A,{style:{padding:10,marginBottom:10}},n.createElement(l.A,{variant:"h6"},t.name),n.createElement(l.A,null,"Reward: ",t.reward))}}}]);
